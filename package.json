@@ -1,0 +1,32 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "./node_modules/.bin/cypress open --config pageLoadTimeout=100000,responseTimeout=10000,requestTimeout=10000",
+  "main": "index.js",
+  "scripts": {
+    "cy": "./node_modules/.bin/cypress open",
+    "cypress": "cypress open",
+    "ci": "BUCKET_NAME=zw-test-screenshots AWS_ACCESS_ID=AKIAU4KEDKJYZ727JI54 AWS_SECRET_KEY=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 ./node_modules/.bin/cypress run",
+    "principal": "./node_modules/cypress/bin/cypress run -s cypress/integration/1-TelaPrincipal/**/*.spec.js",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.610.0",
+    "browserslist": "^4.8.6",
+    "caniuse-lite": "^1.0.30001023",
+    "e": "0.0.4",
+    "mocha": "^7.1.0",
+    "patch-package": "^6.2.0",
+    "wait-on": "^3.3.0",
+    "xvfb": "^0.3.0"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {
+    "cypress": "^3.6.0",
+    "mocha-junit-reporter": "^1.23.3"
+  }
+}

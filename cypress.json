@@ -1,0 +1,14 @@
+{
+  "chromeWebSecurity": false,
+  "baseUrl": "http://swarm2.pactosolucoes.com.br:8027/ZillyonWeb",
+  "video": false,
+  "numTestsKeptInMemory": 5,
+  "defaultCommandTimeout": 50000,
+  "pageLoadTimeout": 190000,
+  "retryOnNetworkFailure": true,
+  "requestTimeout": 220000,
+  "responseTimeout": 50000,
+  "projectId": "711tk1",
+  "viewportWidth": 1366,
+  "viewportHeight": 768
+}
